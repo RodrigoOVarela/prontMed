@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cadastro de Usuário
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card>
+    <ion-list>
+      
+        <ion-item>
+          <ion-label stacked>Nome</ion-label>
+          <ion-input type="text" name="name" [(ngModel)]="model.name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Sobrenome</ion-label>
+          <ion-input type="text" name="lastName" [(ngModel)]="model.lastName"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Telefone</ion-label>
+          <ion-input type="text" name="phone" [(ngModel)]="model.phone"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Email</ion-label>
+          <ion-input type="text" name="email" [(ngModel)]="model.email"></ion-input>        
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Senha</ion-label>
+          <ion-input type="password" name="password" [(ngModel)]="model.password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Repita a Senha</ion-label>
+          <ion-input type="password" name="repeatPassword" [(ngModel)]="model.repeatPassword"></ion-input>
+        </ion-item>
+      
+    </ion-list>
+</ion-card>
+<ion-card>
+    <ion-item no-lines>
+        <div class="avatar-wrapper">
+          <ion-avatar item-left> Adicione uma Foto
+            <img src="../../assets/img/usuario-padrao.jpg">
+          </ion-avatar>
+          <button class="btn-tirar-foto" ion-button icon-only round0>
+            <ion-icon name="camera" item-right></ion-icon>
+          </button>
+        </div>
+    </ion-item>
+</ion-card>
+
+  <button ion-button block (click)="createAccount()" color="primary">Criar conta</button>
+
+</ion-content>
