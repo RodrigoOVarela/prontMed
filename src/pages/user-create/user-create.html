@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Adicionar Novo Paciente
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="first_name" [(ngModel)]="model.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Sobrenome</ion-label>
+      <ion-input type="text" name="last_name" [(ngModel)]="model.lastName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Telefone para Contato</ion-label>
+      <ion-input type="text" name="phone" [(ngModel)]="model.phone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CPF</ion-label>
+      <ion-input type="text" name="cpf" [(ngModel)]="model.cpf"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>SUS</ion-label>
+      <ion-input type="text" name="sus" [(ngModel)]="model.nationalHealthCard"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text" name="email" [(ngModel)]="model.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Senha</ion-label>
+      <ion-input type="password" name="password" [(ngModel)]="model.password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block (click)="save()" color="primary">Salvar</button>
+
+</ion-content>

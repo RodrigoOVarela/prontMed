@@ -61,7 +61,7 @@ export class UserListPage {
   }
 
   openCreateUser() {
-    this.navCtrl.push('UserEditPage');
+    this.navCtrl.push('UserCreatePage');
   }
 
   openEditUser(id: number) {
