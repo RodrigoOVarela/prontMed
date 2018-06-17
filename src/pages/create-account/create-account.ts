@@ -15,6 +15,9 @@ export class CreateAccountPage {
     this.model.name = 'Rodrigo';
     this.model.lastName = 'Varela';
     this.model.phone = 49999555789;
+    this.model.cpf = '430.422.290-25';
+    this.model.nationalHealthCard = 282019128640001;
+    this.model.cbo = '2251-25';
     this.model.email = 'rodrigo@gmail.com';
     this.model.password = 'teste';
     this.model.repeatPassword = 'teste';
@@ -36,6 +39,9 @@ export class User {
   name: string;
   lastName: string;
   phone: number;
+  cpf: string;
+  nationalHealthCard: number;
+  cbo: string;
   email: string;
   password: string;
   repeatPassword: string;
