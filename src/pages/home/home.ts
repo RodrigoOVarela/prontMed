@@ -20,4 +20,8 @@ export class HomePage {
   openListUser() {
     this.navCtrl.push('UserListPage');
   }
+
+  openUserProfile(){
+     this.navCtrl.push('UserProfilePage');
+  }
 }
