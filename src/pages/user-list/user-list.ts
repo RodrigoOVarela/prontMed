@@ -67,7 +67,7 @@ export class UserListPage {
   openEditUser(id: number) {
     this.userProvider.get(id)
       .then((result: any) => {
-        this.navCtrl.push('UserEditPage', { user: result.data });
+        this.navCtrl.push('UserCreatePage', { user: result.data });
       })
       .catch((error: any) => {
         this.toast.create({ message: 'Erro ao recuperar o usuário. Erro: ' + error.error, position: 'botton', duration: 3000 }).present();
